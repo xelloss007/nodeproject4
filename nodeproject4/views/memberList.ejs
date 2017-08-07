@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<fieldset>
+<table border = '1'>
+<legend>회원리스트</legend>
+<tr>
+<th>이름</th>
+<th>id</th>
+<th>pw</th>
+<th>email</th>
+<th>idate</th>
+</tr>
+<%
+for(i = 0; i < user.length; i++){
+%>
+<tr>
+<td> <%= user[i].num %></td>
+<td> <%= user[i].id %></td>
+<td> <%= user[i].pw %></td>
+<td> <%= user[i].email %></td>
+<td> <%= user[i].idate %></td>
+</tr>
+<%
+}
+%>
+</table>
+</fieldset>
+</body>
+</html>

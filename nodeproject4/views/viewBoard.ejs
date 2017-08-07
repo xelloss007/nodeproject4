@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+게시판 내용 보기<br>
+<table border = '1'>
+<tr>
+<td>글번호</td>
+<td><%= board.num %></td>
+</tr>
+<tr>
+<td>타이틀</td>
+<td><%= board.title %></td>
+</tr>
+<tr>
+<td>글쓴이</td>
+<td><%= board.writer %></td>
+</tr>
+<tr>
+<td>내용</td>
+<td><%= board.content %></td>
+</tr>
+<tr>
+<td>날짜</td>
+<td><%= board.idate %></td>
+</tr>
+<tr>
+<td>조회수</td>
+<td><%= board.cnt %></td>
+</tr>
+</table>
+<% include ./fooder.ejs %>
+
+</body>
+</html>
